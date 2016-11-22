@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>me</title>
+</head>
+<body>
+  <form action="/me" method="post">
+    <input type="text" name="email" value=<%= info.email %>>
+    <input type="text" name="firstName" value=<%= info.firstName %>>
+    <input type="text" name="lastName" value=<%= info.lastName %>>
+    <input type="submit">
+  </form>
+
+  <table border="1">
+    <tr>
+      <th>Email </th>
+      <th>FirstName </th>
+      <th>LastName </th>
+    </tr>
+    <tr>
+      <td><%= info.email %></td>
+      <td><%= info.firstName %></td>
+      <td><%= info.lastName %></td>
+    </tr>
+  </table>
+</body>
+</html>
